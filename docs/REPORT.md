@@ -60,7 +60,3 @@ The existing stylesheet includes responsive layouts at 1000 px, 760 px, and 420 
 - Customer access tokens are stored in browser local storage to support account-free status tracking. Use HTTPS in any shared environment and keep the same-browser limitation clear to customers.
 - The application binds to loopback by default. If hosted behind a reverse proxy, configure the bind address and TLS carefully.
 - Functional coverage exercises the HTTP service and persistence, but does not replace manual visual checks on real desktop and mobile browsers.
-
-## Notion publication
-
-This report is saved in the repository. Notion is not connected in the current workspace, so it has not been published there yet. Once the Notion connection is available, this report can be copied into the Waggly project space.

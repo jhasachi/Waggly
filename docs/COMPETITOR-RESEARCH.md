@@ -180,23 +180,25 @@ flowchart LR
 
 The inspection above is a heuristic desk review. To gather real usability evidence, recruit **3–5 participants**, ideally people who own dogs or have experience booking appointments online. Ask each person to attempt the same tasks independently on each competitor website. Record consent before observation and do not collect unnecessary personal information.
 
-| Task                                                | Observation                                            |
-| --------------------------------------------------- | ------------------------------------------------------ |
-| Find grooming services                              | Can the participant locate relevant services?          |
-| Find the price of a full grooming service           | Is the price easy to find and understand?              |
-| Find how to arrange an appointment                  | Can the participant identify the correct booking path? |
-| Try to submit an appointment request                | Which fields or steps cause hesitation or errors?      |
-| Find how to check, change, or cancel an appointment | Is any self-service option visible?                    |
+| Task                                                | Observation                                                                                                   |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Find grooming services                              | Can the participant locate relevant services?                                                                 |
+| Find the price of a full grooming service           | Is the price easy to find and understand?                                                                     |
+| Find how to arrange an appointment                  | Can the participant identify the correct booking path?                                                        |
+| Follow the booking path to its final step           | Which fields or steps cause hesitation? Stop before sending an enquiry or entering real personal information. |
+| Find how to check, change, or cancel an appointment | Is any self-service option visible?                                                                           |
 
 For each task, record completion, time, errors or confusion, navigation path, and a short satisfaction rating. Do not interpret a task that cannot be completed on the public website as a failure of a private process that was not observable.
 
-| Task                          | Psí krása | Dirty Dog | Doggy Style Grooming |
-| ----------------------------- | --------- | --------- | -------------------- |
-| Find services                 | To test   | To test   | To test              |
-| Find prices                   | To test   | To test   | To test              |
-| Find booking method           | To test   | To test   | To test              |
-| Submit an online enquiry      | To test   | To test   | To test              |
-| Find cancellation information | To test   | To test   | To test              |
+> **Simulated example only — not participant data.** The table below contains AI-generated illustrative values from a fictional example. No participant sessions produced these numbers. The competitor usability study remains incomplete; replace the table with actual anonymized observations before submitting it as study results.
+
+| Task                                      | Salon Psí krása                     | Dirty Dog                           | Doggy Style Grooming |
+| ----------------------------------------- | ----------------------------------- | ----------------------------------- | -------------------- |
+| Find grooming services                    | 3/3 completed · 0:25 median         | 3/3 · 0:20                          | 3/3 · 0:18           |
+| Find the price of a full groom            | 2/3 · 0:55                          | 3/3 · 0:35                          | 3/3 · 0:40           |
+| Find how to arrange an appointment        | 3/3 · 0:35                          | 3/3 · 0:25                          | 3/3 · 0:40           |
+| Follow the booking path to its final step | 3/3 · 1:15                          | 3/3 identified phone booking · 0:45 | 3/3 · 1:40           |
+| Find appointment cancellation information | 0/3 found self-service cancellation | 0/3                                 | 0/3                  |
 
 ## 9. Opportunities for Waggly
 
