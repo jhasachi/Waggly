@@ -21,12 +21,12 @@ Booking, service, availability, and status records are stored in `data/waggly.sq
 
 Set these environment variables before running outside a local demo:
 
-| Variable                                           | Purpose                                                   |
-| -------------------------------------------------- | --------------------------------------------------------- |
-| `STAFF_PASSWORD`                                   | Shared staff sign-in password. Replace the demo password. |
-| `PORT`                                             | HTTP port (defaults to `3000`).                           |
-| `HOST`                                             | Bind address (defaults to loopback, `127.0.0.1`).          |
-| `WAGGLY_DATA_DIR`                                   | Optional data directory override, primarily for testing.   |
+| Variable          | Purpose                                                   |
+| ----------------- | --------------------------------------------------------- |
+| `STAFF_PASSWORD`  | Shared staff sign-in password. Replace the demo password. |
+| `PORT`            | HTTP port (defaults to `3000`).                           |
+| `HOST`            | Bind address (defaults to loopback, `127.0.0.1`).         |
+| `WAGGLY_DATA_DIR` | Optional data directory override, primarily for testing.  |
 
 Service prices and availability can be edited in the staff area; appointments use Europe/Prague local time, Monday through Saturday, with 30 minute starts. Service durations reserve overlapping time and pending requests hold their selected time until staff accept or decline them. Customers can review appointment details and see status updates from the My bookings page on the same browser. Booking access tokens are stored in browser local storage; clearing site data removes the local list.
 
@@ -39,5 +39,3 @@ The app sends no email and asks customers for no email address. Staff decisions 
 - Browser-local customer booking list and secure appointment review; staff accept or decline booking requests.
 - Staff session login, appointment review and status actions, service price/visibility management, and per-slot availability controls.
 - Automated tests for booking validation without email, idempotency, overlapping availability, staff authentication and status changes, and persistence after restart.
-
-This is a university prototype. For a public production launch, deploy behind HTTPS with managed secrets, regular database backups, a persistent session store, and a trusted reverse proxy if binding beyond loopback. See [the Milestone 7 report](docs/MILESTONE-7-REPORT.md) for test and security review details.

@@ -1,4 +1,4 @@
-# Waggly — Milestone 7 Report
+# Waggly — Report
 
 **Scope:** testing, polish, performance review, security review, bug fixes, and documentation.
 
@@ -28,30 +28,30 @@ The existing stylesheet includes responsive layouts at 1000 px, 760 px, and 420 
 ## Files created
 
 - `test/booking.test.js` — end-to-end HTTP coverage using a temporary server and SQLite database.
-- `docs/MILESTONE-7-REPORT.md` — this milestone report.
+- `docs/REPORT.md` — this milestone report.
 - `package-lock.json` — reproducible dependency versions.
 - `storage.js` — SQLite storage, migration, transactional booking creation, and conflict handling (introduced in Milestone 3; included in the current uncommitted project changes).
 - `public/my-bookings.html` and `public/my-bookings.js` — browser-local customer booking list (introduced with the no-email flow; included in the current uncommitted project changes).
 
 ## Test and review results
 
-| Check | Result |
-| --- | --- |
-| `npm test` | 1 test passed; 0 failed. |
-| Booking request without an email address | Accepted and returned a pending booking. |
-| Duplicate request key | Reused the original booking and token. |
-| Overlapping appointment time | Rejected with HTTP 409. |
-| Two-hour service reservation | Blocked all overlapping 30-minute starts. |
-| Staff API authentication | Protected booking list returned HTTP 401 before login. |
-| Staff workflow | Accept → confirmed → in progress → completed persisted. Decline reason persisted. |
-| Appointment data after server restart | Completed status remained available from SQLite. |
-| Customer appointment response | Returned booking details without exposing its token or an email field. |
-| Malformed and oversized requests | Returned HTTP 400 and 413, respectively. |
-| Production password guard | App refused to start with the demo password under `NODE_ENV=production`. |
-| Security headers | No-store, nosniff, frame denial, and no-referrer headers checked. |
-| Dependency audit | `npm audit --omit=dev`: 0 vulnerabilities. |
-| Syntax and patch hygiene | `node --check` on server/client scripts and `git diff --check` passed. |
-| Responsive layout | Existing desktop/mobile breakpoints inspected in CSS; no automated visual-browser matrix was run. |
+| Check                                    | Result                                                                                            |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `npm test`                               | 1 test passed; 0 failed.                                                                          |
+| Booking request without an email address | Accepted and returned a pending booking.                                                          |
+| Duplicate request key                    | Reused the original booking and token.                                                            |
+| Overlapping appointment time             | Rejected with HTTP 409.                                                                           |
+| Two-hour service reservation             | Blocked all overlapping 30-minute starts.                                                         |
+| Staff API authentication                 | Protected booking list returned HTTP 401 before login.                                            |
+| Staff workflow                           | Accept → confirmed → in progress → completed persisted. Decline reason persisted.                 |
+| Appointment data after server restart    | Completed status remained available from SQLite.                                                  |
+| Customer appointment response            | Returned booking details without exposing its token or an email field.                            |
+| Malformed and oversized requests         | Returned HTTP 400 and 413, respectively.                                                          |
+| Production password guard                | App refused to start with the demo password under `NODE_ENV=production`.                          |
+| Security headers                         | No-store, nosniff, frame denial, and no-referrer headers checked.                                 |
+| Dependency audit                         | `npm audit --omit=dev`: 0 vulnerabilities.                                                        |
+| Syntax and patch hygiene                 | `node --check` on server/client scripts and `git diff --check` passed.                            |
+| Responsive layout                        | Existing desktop/mobile breakpoints inspected in CSS; no automated visual-browser matrix was run. |
 
 ## Security notes and remaining limits
 
