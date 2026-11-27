@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fff4e8">
+  <title>My bookings · Waggly</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    body{min-height:100vh}.saved-wrap{width:min(760px,calc(100% - 36px));margin:32px auto 72px}.saved-panel{background:var(--white);padding:clamp(22px,5vw,38px);border-radius:24px;box-shadow:var(--shadow)}.saved-panel h1{font-size:clamp(38px,7vw,52px);color:var(--green);margin:10px 0}.saved-note{font-size:13px;color:var(--muted);margin-bottom:24px}.saved-list{display:grid;gap:13px}.saved-card{border:1px solid var(--line);border-radius:16px;padding:18px}.saved-card-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.saved-card h2{color:var(--green);font-size:22px;margin:8px 0}.saved-meta{font-size:13px;color:var(--muted);line-height:1.8}.saved-ref{font-size:10px;letter-spacing:1px;color:var(--muted);font-weight:700}.saved-status{font-size:10px;font-weight:800;padding:5px 9px;border-radius:99px;background:#f8e3bc;color:#765617}.saved-status.CONFIRMED,.saved-status.COMPLETED{background:#e2efde;color:#355c4a}.saved-status.REJECTED,.saved-status.CANCELLED,.saved-status.EXPIRED{background:#f5dfdc;color:#984d43}.saved-actions{display:flex;gap:10px;align-items:center;margin-top:12px}.saved-empty{text-align:center;padding:30px 10px}.saved-empty h2{color:var(--green)}.saved-empty p{font-size:13px}.saved-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:22px}.saved-footer .brand small{font-size:8px}
+  </style>
+</head>
+<body>
+  <div class="saved-wrap">
+    <header class="saved-footer"><a class="brand" href="/"><span class="brand-mark">w</span><span>Waggly<small>HAPPY DOGS. HAPPY HUMANS.</small></span></a><a class="text-link" href="/#book">Book an appointment</a></header>
+    <main class="saved-panel">
+      <span class="eyebrow">YOUR LITTLE WAGGLY CORNER</span>
+      <h1>My bookings</h1>
+      <p class="saved-note">Bookings are saved in this browser. Open this page on the same device to see status updates.</p>
+      <div id="saved-list" class="saved-list"><div class="loading-card">Finding your bookings…</div></div>
+    </main>
+  </div>
+  <script src="/my-bookings.js"></script>
+</body>
+</html>
