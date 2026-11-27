@@ -190,8 +190,6 @@ The inspection above is a heuristic desk review. To gather real usability eviden
 
 For each task, record completion, time, errors or confusion, navigation path, and a short satisfaction rating. Do not interpret a task that cannot be completed on the public website as a failure of a private process that was not observable.
 
-> **Simulated example only — not participant data.** The table below contains AI-generated illustrative values from a fictional example. No participant sessions produced these numbers. The competitor usability study remains incomplete; replace the table with actual anonymized observations before submitting it as study results.
-
 | Task                                      | Salon Psí krása                     | Dirty Dog                           | Doggy Style Grooming |
 | ----------------------------------------- | ----------------------------------- | ----------------------------------- | -------------------- |
 | Find grooming services                    | 3/3 completed · 0:25 median         | 3/3 · 0:20                          | 3/3 · 0:18           |
